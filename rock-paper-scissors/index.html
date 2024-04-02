@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>rps.io</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/customs.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -13,8 +14,8 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
@@ -23,14 +24,29 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Let's Play Rock Paper Scissors.</p>
-  <button id="rock">Rock</button>
-  <button id="paper">Paper</button>
-  <button id="scissors">Scissors</button>
-  <div id="score-area">
-    <div id="player-score-counter"> Your score:  </div>
-    <div id="computer-score-counter">Computer score: </div>
+  <div id="background">
+
+  <!-- Gameplay Area -->
+    <h1>Let's Play Rock Paper Scissors.</h1>
+    <div id="play-area">
+      <img src="img/grass.png" alt="grass-scene" class="scene">
+      <div id="player-side">
+        <div id="score-area">
+          <div id="player-score-counter"> Your score:  </div>
+          <div id="computer-score-counter">Computer score: </div>
+        </div>
+        <div id="battle-commands">
+          <button class="battle-button" id="rock">Rock</button>
+          <button class="battle-button" id="paper">Paper</button>
+          <button class="battle-button" id="scissors">Scissors</button>
+          <button class="battle-button" id="placeholder">Placeholder</button>
+        </div>
+      </div>
+    </div>
+    <div id="controller">
+      <button>Audio</button>
+      <button>Power On</button>
+    </div>
   </div>
   <script src="js/app.js"></script>
 </body>
